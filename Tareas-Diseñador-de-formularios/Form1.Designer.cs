@@ -44,9 +44,9 @@
             // 
             lblRegistro.AutoSize = true;
             lblRegistro.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRegistro.Location = new Point(96, 26);
+            lblRegistro.Location = new Point(84, 20);
             lblRegistro.Name = "lblRegistro";
-            lblRegistro.Size = new Size(393, 46);
+            lblRegistro.Size = new Size(319, 37);
             lblRegistro.TabIndex = 0;
             lblRegistro.Text = "Registro de estudiantes";
             // 
@@ -54,9 +54,9 @@
             // 
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNombre.Location = new Point(61, 137);
+            lblNombre.Location = new Point(53, 103);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(108, 31);
+            lblNombre.Size = new Size(91, 25);
             lblNombre.TabIndex = 1;
             lblNombre.Text = "Nombre:";
             lblNombre.Click += lblNombre_Click;
@@ -65,9 +65,9 @@
             // 
             lblCarnet.AutoSize = true;
             lblCarnet.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCarnet.Location = new Point(70, 204);
+            lblCarnet.Location = new Point(61, 153);
             lblCarnet.Name = "lblCarnet";
-            lblCarnet.Size = new Size(90, 31);
+            lblCarnet.Size = new Size(76, 25);
             lblCarnet.TabIndex = 2;
             lblCarnet.Text = "Carnet:";
             // 
@@ -75,9 +75,9 @@
             // 
             lblCarrera.AutoSize = true;
             lblCarrera.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCarrera.Location = new Point(63, 272);
+            lblCarrera.Location = new Point(55, 204);
             lblCarrera.Name = "lblCarrera";
-            lblCarrera.Size = new Size(97, 31);
+            lblCarrera.Size = new Size(83, 25);
             lblCarrera.TabIndex = 3;
             lblCarrera.Text = "Carrera:";
             // 
@@ -86,25 +86,28 @@
             cmbCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbCarrera.FormattingEnabled = true;
             cmbCarrera.Items.AddRange(new object[] { "Administración de Empresas", "Derecho", "Ingeniería en Sistemas ", "Informática", "Medicina", "Contaduría", "Finanzas", "Psicología", "Ingeniería Civil", "Comunicación" });
-            cmbCarrera.Location = new Point(223, 274);
+            cmbCarrera.Location = new Point(195, 206);
+            cmbCarrera.Margin = new Padding(3, 2, 3, 2);
             cmbCarrera.Name = "cmbCarrera";
-            cmbCarrera.Size = new Size(241, 28);
+            cmbCarrera.Size = new Size(211, 23);
             cmbCarrera.TabIndex = 3;
             cmbCarrera.SelectedIndexChanged += cmbCarrera_SelectedIndexChanged;
             // 
             // txtCarnet
             // 
-            txtCarnet.Location = new Point(223, 208);
+            txtCarnet.Location = new Point(195, 156);
+            txtCarnet.Margin = new Padding(3, 2, 3, 2);
             txtCarnet.Name = "txtCarnet";
-            txtCarnet.Size = new Size(241, 27);
+            txtCarnet.Size = new Size(211, 23);
             txtCarnet.TabIndex = 2;
             txtCarnet.TextChanged += txtCarnet_TextChanged;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(223, 136);
+            txtNombre.Location = new Point(195, 102);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(241, 27);
+            txtNombre.Size = new Size(211, 23);
             txtNombre.TabIndex = 1;
             txtNombre.TextChanged += txtNombre_TextChanged;
             // 
@@ -113,18 +116,19 @@
             lblLista.AutoSize = true;
             lblLista.BorderStyle = BorderStyle.FixedSingle;
             lblLista.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            lblLista.Location = new Point(42, 392);
+            lblLista.Location = new Point(10, 292);
             lblLista.Name = "lblLista";
-            lblLista.Size = new Size(194, 30);
+            lblLista.Size = new Size(155, 23);
             lblLista.TabIndex = 7;
             lblLista.Text = "Lista de Estudiantes";
             lblLista.Click += label1_Click;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(143, 320);
+            btnAgregar.Location = new Point(125, 240);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(129, 47);
+            btnAgregar.Size = new Size(113, 35);
             btnAgregar.TabIndex = 4;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -132,9 +136,10 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(333, 325);
+            btnLimpiar.Location = new Point(291, 244);
+            btnLimpiar.Margin = new Padding(3, 2, 3, 2);
             btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new Size(131, 42);
+            btnLimpiar.Size = new Size(115, 32);
             btnLimpiar.TabIndex = 5;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
@@ -143,10 +148,10 @@
             // fmRegistros
             // 
             AcceptButton = btnAgregar;
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnLimpiar;
-            ClientSize = new Size(580, 488);
+            ClientSize = new Size(508, 366);
             Controls.Add(btnLimpiar);
             Controls.Add(btnAgregar);
             Controls.Add(lblLista);
@@ -157,8 +162,10 @@
             Controls.Add(lblCarnet);
             Controls.Add(lblNombre);
             Controls.Add(lblRegistro);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "fmRegistros";
             Text = "Registros de estudiantes";
+            Load += fmRegistros_Load;
             Enter += btnAgregar_Click;
             ResumeLayout(false);
             PerformLayout();
